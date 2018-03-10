@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Kuisioner Kepuasan Pelanggan</title>
+</head>
+
+<body>
+    <div class="form-box">
+        <div>
+            <h1 style="text-align: center">KUISIONER </h1>
+            <h1 style="text-align: center">KEPUASAN PELANGGAN</h1>
+            <h2 style="text-align: center">(UNTUK EVALUASI TAHUNAN PERUSAHAAN) </h2>
+            <form action="HasilKuisioner.php" method="POST" enctype="multipart/form-data"> 
+                <label for="name">NAMA</label>
+                <input type="text" id="name" name="name" placeholder="Nama Lengkap Anda....">
+
+                <label for="lname">UMUR</label>
+                <input type="number" id="Umur" name="umur" placeholder="Umur Anda....">
+
+                <label for="name">TTL</label>
+                <input type="text" id="email" name="address" placeholder="Tempat Tanggal Lahir Anda....">
+
+                <label for="name">N0. HP</label>
+                <input type="number" id="number" name="number" placeholder="No HP Anda....">
+
+
+                <label for="job">PEKERJAAN</label>
+                <select id="job" name="Pekerjaan">
+                    <option value="...">...</option>
+                    <option value="pns">PNS</option>
+                    <option value="swasta">SWASTA</option>
+                    <option value="mahasiswa">Mahasiswa</option>
+                    <option value="ibu rumah tangga">Ibu Rumah Tangga</option>
+                    <option value="lainnya">Lainnya. . .</option>
+                    
+                </select>
+
+                <label for="gender">JENIS KELAMIN</label>
+                <select id="gender" name="JenisKelamin">
+                    <option value="...">...</option>
+                    <option value="perempuan">Perempuan</option>
+                    <option value="laki">Laki-laki</option>
+                </select>
+
+                <label for="question">Apakah anda menikmati pelayanan kami?</label>
+                <br>
+                <input type="radio" name="answer" value="Ya" checked> Ya
+                <br>
+                <input type="radio" name="answer" value="Tidak"> Tidak
+                <br>
+                <br>
+
+                <label for="question">Apakah produk kami sesuai dengan yang anda harapkan?</label>
+                <br>
+                <input type="radio" name="answer1" value="Ya" checked> Ya
+                <br>
+                <input type="radio" name="answer1" value="Tidak"> Tidak
+                <br>
+                <br>
+
+                <label for="question">Apakah harga yang kami tawarkan terjangkau?</label>
+                <br>
+                <input type="radio" name="answer2" value="Ya" checked> Ya
+                <br>
+                <input type="radio" name="answer2" value="Tidak"> Tidak
+                <br>
+                <br>
+
+                <label for="question">Bagaimana kenyamanan tempat kami?</label>
+                <br>
+                <input type="radio" name="answer3" value="Sangat baik" checked> Sangat baik
+                <br>
+                <input type="radio" name="answer3" value="Baik"> Baik
+                <br>
+                <input type="radio" name="answer3" value="Cukup"> Cukup
+                <br>
+                <input type="radio" name="answer3" value="Buruk"> Buruk
+                <br>
+                <input type="radio" name="answer3" value="Sangat buruk"> Sangat buruk
+                <br>
+                <br>
+
+                <label for="question">Apakah karyawan kami tanggap dan cepat dalam melayani Anda?</label>
+                <br>
+                <input type="radio" name="answer4" value="Sangat baik" checked> Sangat baik
+                <br>
+                <input type="radio" name="answer4" value="Baik"> Baik
+                <br>
+                <input type="radio" name="answer4" value="Cukup"> Cukup
+                <br>
+                <input type="radio" name="answer4" value="Buruk"> Buruk
+                <br>
+                <input type="radio" name="answer4" value="Sangat buruk"> Sangat buruk
+                <br>
+                <br>
+
+                <label for="question">Produk apa yang sudah anda gunakan?</label>
+                <br>
+                <input type="checkbox" name="Products[]" value="Barang Elektronik"> Barang Elektronik
+                <br>
+                <input type="checkbox" name="Products[]" value="Aksesoris"> Aksesoris
+                <br>
+                <input type="checkbox" name="Products[]" value="Barang Second"> Barang Second
+                <br>
+                <input type="checkbox" name="Products[]" value="Lainnya"> Lainnya
+                <br>
+        
+                <label for="name">KRITIK & SARAN</label>
+                <textarea style="height: 100px" type="text" id="name" name="kritik" placeholder="Tuliskan kritik dan saran Anda disini..."></textarea>
+
+                <label for="name">Upload Foto Anda Dengan Produk Kami</label>
+                <br>
+                <input type="file" name="pic" accept="image/*">
+                <br>
+                <br>
+
+                <input type="submit" value="S U B M I T">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
